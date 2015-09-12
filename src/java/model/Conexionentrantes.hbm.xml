@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-sep-2015 18:56:53 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Conexionentrantes" table="conexionentrantes" catalog="nicoexpress">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <timestamp name="timestamp" column="timestamp" />
+        <property name="direccionIp" type="string">
+            <column name="direccionIp" length="16" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
